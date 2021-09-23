@@ -155,7 +155,7 @@ section.no-margin {
 }
 
 .landing {
-    background-image: url("./Assets/background-image.png");
+    background-image: url("./assets/background-image.png");
     background-size: cover;
     display: flex;
     flex-direction: column;
