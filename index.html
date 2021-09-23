@@ -1,141 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Mellemfolkeligt Samvirke</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+			integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mellemfolkeligt Samvirke</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap"
-        rel="stylesheet">
-</head>
+	<body>
+		<header>
+			<img src="./assets/favicon.png" alt="Mallemfolk logo" class="logo" />
+			<nav>
+				<ul class="nav-list">
+					<li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+					<li class="nav-item">
+						<a href="/boardgames" class="nav-link">Board games</a>
+					</li>
+					<li class="nav-item"><a href="/menu" class="nav-link">Menu</a></li>
+					<li class="nav-item">
+						<a href="/joinus" class="nav-link">Join us</a>
+					</li>
+					<li class="nav-item">
+						<a href="/aboutus" class="nav-link">About us</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
 
-<body>
-    <header>
-        <img src="./Assets/favicon.png" alt="Mallemfolk logo" class="logo">
-        <nav>
-            <ul class="nav-list">
-                <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="/boardgames" class="nav-link">Board games</a></li>
-                <li class="nav-item"><a href="/menu" class="nav-link">Menu</a></li>
-                <li class="nav-item"><a href="/joinus" class="nav-link">Join us</a></li>
-                <li class="nav-item"><a href="/aboutus" class="nav-link">About us</a></li>
-            </ul>
-        </nav>
-    </header>
+		<main>
+			<section class="landing no-margin">
+				<div class="container">
+					<img src="./assets/logo.png" alt="Graphic" class="graphic" />
+					<h3 class="subheading">
+						Sustainable non-profit cafe based in Aarhus, Denmark.
+					</h3>
+					<button class="maps-button">
+						<a href="https://goo.gl/maps/JeYGA4Qae3cctEAm7">
+							Find us on maps <i class="fas fa-map-marker-alt map-icon"></i>
+						</a>
+					</button>
+				</div>
+			</section>
+			<section class="events">
+				<h1>UPCOMING EVENTS</h1>
+				<div class="events-carousel">
+					<a href="/event.html" class="card">
+						<img class="card-img" src="./assets/event-1.png" alt="Event" />
+						<div class="card-text">
+							<p class="card-details">
+								Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+								Voluptas rem voluptatum modi quo sapiente ipsa vero explicabo
+								dolore quam eaque!
+							</p>
+							<p class="card-link" href="/event.html">
+								Read more <i class="fas fa-chevron-right"></i>
+							</p>
+						</div>
+					</a>
+					<a href="/event.html" class="card">
+						<img class="card-img" src="./assets/event-5.png" alt="Event" />
+						<div class="card-text">
+							<p class="card-details">
+								Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+								Voluptas rem voluptatum modi quo sapiente ipsa vero explicabo
+								dolore quam eaque!
+							</p>
+							<p class="card-link" href="/event.html">
+								Read more <i class="fas fa-chevron-right"></i>
+							</p>
+						</div>
+					</a>
+					<a href="/event.html" class="card">
+						<img class="card-img" src="./assets/event-3.png" alt="Event" />
+						<div class="card-text">
+							<p class="card-details">
+								Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+								Voluptas rem voluptatum modi quo sapiente ipsa vero explicabo
+								dolore quam eaque!
+							</p>
+							<p class="card-link" href="/event.html">
+								Read more <i class="fas fa-chevron-right"></i>
+							</p>
+						</div>
+					</a>
+					<a href="/event.html" class="card">
+						<img class="card-img" src="./assets/event-4.png" alt="Event" />
+						<div class="card-text">
+							<p class="card-details">
+								Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+								Voluptas rem voluptatum modi quo sapiente ipsa vero explicabo
+								dolore quam eaque!
+							</p>
+							<p class="card-link" href="/event.html">
+								Read more <i class="fas fa-chevron-right"></i>
+							</p>
+						</div>
+					</a>
+					<a href="/event.html" class="card">
+						<img class="card-img" src="./assets/event-2.png" alt="Event" />
+						<div class="card-text">
+							<p class="card-details">
+								Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+								Voluptas rem voluptatum modi quo sapiente ipsa vero explicabo
+								dolore quam eaque!
+							</p>
+							<p class="card-link" href="/event.html">
+								Read more <i class="fas fa-chevron-right"></i>
+							</p>
+						</div>
+					</a>
+					<a href="/event.html" class="card">
+						<img class="card-img" src="./assets/event-6.png" alt="Event" />
+						<div class="card-text">
+							<p class="card-details">
+								Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+								Voluptas rem voluptatum modi quo sapiente ipsa vero explicabo
+								dolore quam eaque!
+							</p>
+							<p class="card-link" href="/event.html">
+								Read more <i class="fas fa-chevron-right"></i>
+							</p>
+						</div>
+					</a>
+				</div>
+			</section>
+		</main>
 
-    <main>
-        <section class="landing no-margin">
-            <div class="container">
-                <img src="./Assets/logo.png" alt="Graphic" class="graphic">
-                <h3 class="subheading">Sustainable non-profit
-                    cafe based in
-                    Aarhus, Denmark.</h3>
-                <button class="maps-button"> <a href="https://goo.gl/maps/JeYGA4Qae3cctEAm7">
-                        Find us on maps <i class="fas fa-map-marker-alt map-icon"></i>
-                    </a> </button>
-            </div>
-        </section>
-        <section class="events">
-            <h1>UPCOMING EVENTS</h1>
-            <div class="events-carousel">
-                <a href="/event.html" class="card">
-                    <img class="card-img" src="./Assets/event-1.png" alt="Event">
-                    <div class="card-text">
-                        <p class="card-details">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas rem
-                            voluptatum
-                            modi quo
-                            sapiente ipsa vero explicabo dolore quam eaque!</p>
-                        <p class="card-link" href="/event.html">Read more <i class="fas fa-chevron-right"></i></p>
-                    </div>
-                </a>
-                <a href="/event.html" class="card">
-                    <img class="card-img" src="./Assets/event-5.png" alt="Event">
-                    <div class="card-text">
-                        <p class="card-details">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas rem
-                            voluptatum
-                            modi quo
-                            sapiente ipsa vero explicabo dolore quam eaque!</p>
-                        <p class="card-link" href="/event.html">Read more <i class="fas fa-chevron-right"></i></p>
-                    </div>
-                </a>
-                <a href="/event.html" class="card">
-                    <img class="card-img" src="./Assets/event-3.png" alt="Event">
-                    <div class="card-text">
-                        <p class="card-details">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas rem
-                            voluptatum
-                            modi quo
-                            sapiente ipsa vero explicabo dolore quam eaque!</p>
-                        <p class="card-link" href="/event.html">Read more <i class="fas fa-chevron-right"></i></p>
-                    </div>
-                </a>
-                <a href="/event.html" class="card">
-                    <img class="card-img" src="./Assets/event-4.png" alt="Event">
-                    <div class="card-text">
-                        <p class="card-details">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas rem
-                            voluptatum
-                            modi quo
-                            sapiente ipsa vero explicabo dolore quam eaque!</p>
-                        <p class="card-link" href="/event.html">Read more <i class="fas fa-chevron-right"></i></p>
-                    </div>
-                </a>
-                <a href="/event.html" class="card">
-                    <img class="card-img" src="./Assets/event-2.png" alt="Event">
-                    <div class="card-text">
-                        <p class="card-details">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas rem
-                            voluptatum
-                            modi quo
-                            sapiente ipsa vero explicabo dolore quam eaque!</p>
-                        <p class="card-link" href="/event.html">Read more <i class="fas fa-chevron-right"></i></p>
-                    </div>
-                </a>
-                <a href="/event.html" class="card">
-                    <img class="card-img" src="./Assets/event-6.png" alt="Event">
-                    <div class="card-text">
-                        <p class="card-details">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas rem
-                            voluptatum
-                            modi quo
-                            sapiente ipsa vero explicabo dolore quam eaque!</p>
-                        <p class="card-link" href="/event.html">Read more <i class="fas fa-chevron-right"></i></p>
-                    </div>
-                </a>
-            </div>
-        </section>
-    </main>
+		<footer>
+			<ul class="links-list">
+				<li><a href="">Terms of Use</a></li>
+				<li><a href="">About the Mallemfolk</a></li>
+				<li><a href="">Privacy Policy</a></li>
+				<li><a href="">Cookies</a></li>
+				<li><a href="">Accessibility</a></li>
+				<li><a href="">Contact the BBC</a></li>
+				<li><a href="">Get Personalised Newsletters</a></li>
+			</ul>
+			<p>AdChoices / Do Not Sell My Info</p>
+			<p>
+				Copyright © 2021 Mallemfolk. The Mallemfolk is not responsible for the
+				content of external sites. Read about our approach to external linking.
+			</p>
+		</footer>
 
-    <footer>
-        <ul class="links-list">
-            <li><a href="">Terms of Use</a></li>
-            <li><a href="">About the Mallemfolk</a></li>
-            <li><a href="">Privacy Policy</a></li>
-            <li><a href="">Cookies</a></li>
-            <li><a href="">Accessibility</a></li>
-            <li><a href="">Contact the BBC</a></li>
-            <li><a href="">Get Personalised Newsletters</a></li>
-        </ul>
-        <p>
-            AdChoices / Do Not Sell My Info
-        </p>
-        <p>
-            Copyright © 2021 Mallemfolk. The Mallemfolk is not responsible for the content of external sites. Read about
-            our approach
-            to
-            external linking.
-        </p>
-    </footer>
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="./index.js"></script>
-</body>
-
+		<script
+			src="https://code.jquery.com/jquery-3.6.0.min.js"
+			integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+			crossorigin="anonymous"
+		></script>
+		<script
+			type="text/javascript"
+			src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+		></script>
+		<script src="./index.js"></script>
+	</body>
 </html>
