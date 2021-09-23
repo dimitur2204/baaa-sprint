@@ -92,6 +92,16 @@ button {
     outline: none;
     border: none;
     cursor: pointer;
+    transition: background-color 0.3s ease-out;
+}
+
+.maps-button:hover{
+    background-color: transparent;
+    border: 1px solid var(--main-light);
+}
+
+.maps-button:hover a{
+    color: var(--main-light);
 }
 
 header {
@@ -184,7 +194,7 @@ section.no-margin {
 
 .events {
     text-align: center;
-    margin: 60px;
+    margin: 90px 60px;
 }
 
 .events h1 {
@@ -244,7 +254,7 @@ section.no-margin {
 
 .card-text {
     text-align: left;
-    padding: 15px 8px;
+    padding: 25px 15px;
 }
 
 .card-link {
@@ -261,7 +271,7 @@ section.no-margin {
 footer {
     background-color: var(--main-dark);
     color: var(--main-light);
-    padding: 15px 60px;
+    padding: 30px 60px;
 }
 
 footer a {
