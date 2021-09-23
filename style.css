@@ -1,0 +1,277 @@
+:root {
+    --main-light: #e0eacd;
+    --main-dark: #ea4610;
+}
+
+@keyframes scale {
+    0% {
+        top: 100%;
+        opacity: 0;
+    }
+    100% {
+        top: 0%;
+        opacity: 1;
+    }
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+img,
+ol,
+ul,
+li,
+footer,
+header,
+nav {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+body {
+    line-height: 1;
+    background-color: var(--main-light);
+    color: var(--main-dark);
+}
+
+body > * {
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: normal;
+}
+
+h1 {
+    font-size: 64px;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+    content: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--main-dark);
+}
+
+button {
+    font-size: 26px;
+    min-width: 80px;
+    width: 100%;
+    min-height: 65px;
+    background-color: var(--main-light);
+    color: var(--main-dark);
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+header {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section {
+    margin: 0 30px;
+}
+
+section.no-margin {
+    margin: 0;
+}
+
+.logo {
+    width: 120px;
+    height: 120px;
+    margin-left: 30px;
+    position: relative;
+    top: 20px;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.nav-item {
+    margin: 0 10px;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.nav-link:after {
+    content: "";
+    display: block;
+    height: 1px;
+    position: relative;
+    top: 4px;
+    left: 50%;
+    background: var(--main-dark);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.nav-link:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+.container {
+    width: 364px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing {
+    background-image: url("./Assets/background-image.png");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.graphic {
+    position: relative;
+    max-height: 370px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.subheading {
+    color: var(--main-light);
+    font-size: 32px;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.map-icon {
+    margin-left: 10px;
+}
+
+.events {
+    text-align: center;
+    margin: 60px;
+}
+
+.events h1 {
+    margin-bottom: 30px;
+}
+
+.slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slick-dots li button {
+    font-size: 0;
+    min-height: unset;
+    min-width: unset;
+    width: 15px;
+    height: 15px;
+    margin: 0 3px;
+    background: var(--main-dark);
+    border-radius: 50%;
+    opacity: 0.3;
+    cursor: pointer;
+}
+
+.slick-dots .slick-active button {
+    opacity: 1;
+}
+
+.slick-slide {
+    margin: 0 15px;
+}
+
+.slick-list {
+    margin: 0 -15px;
+    padding-bottom: 25px;
+}
+
+.card {
+    background-color: #fff;
+    width: 100%;
+    border-radius: 15px;
+    -webkit-box-shadow: 2px 5px 13px 5px rgba(0, 0, 0, 0.27);
+    box-shadow: 2px 5px 13px 5px rgba(0, 0, 0, 0.27);
+}
+
+.card-img {
+    max-width: 100%;
+}
+
+.card-details {
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    text-align: left;
+    padding: 15px 8px;
+}
+
+.card-link {
+    display: flex;
+    align-items: center;
+}
+.card-link i {
+    margin-left: 6px;
+    font-size: 12px;
+    position: relative;
+    top: 1px;
+}
+
+footer {
+    background-color: var(--main-dark);
+    color: var(--main-light);
+    padding: 15px 60px;
+}
+
+footer a {
+    color: var(--main-light);
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+.links-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}

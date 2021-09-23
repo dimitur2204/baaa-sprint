@@ -1,0 +1,80 @@
+main{
+    background-image: url('./assets/big-event-thing.png');
+    background-size: cover;
+    height: 94vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid var(--main-light);
+    color: var(--main-light);
+    width: 100%;
+    max-width: 300px;
+    margin: 15px;
+    transition: background-color 0.3s ease-out;
+}
+
+.btn-wrapper{
+display: flex;
+justify-content: flex-end;
+width: 45%;
+margin: 15px;
+}
+
+.share-button{
+    width: 40px;
+    height: 40px;
+    background-color: var(--main-light);
+    color: var(--main-dark);
+    border: none;
+}
+
+.share-button:hover{
+    background-color: transparent;
+    border: 1px solid var(--main-light);
+    color: var(--main-light);
+}
+
+.sign-up-button:hover{
+    background-color: var(--main-light);
+    color: var(--main-dark);
+}
+
+.event-article {
+    margin: 30px;
+    margin-bottom: 90px;
+    margin-top: 60px;
+}
+
+.event-article h1{
+    margin-bottom: 30px;
+}
+
+.event-article p{
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.event-article p:last-of-type{
+    margin-bottom: 40px;
+}
+
+.img-wrapper{
+    display: flex;
+}
+.img-wrapper img{
+    width: 100%;
+    object-fit: cover;
+}
+.img-wrapper img:first-child{
+    margin-right: 10px;
+}
+.img-wrapper img:last-child{
+    margin-left: 10px;
+}
