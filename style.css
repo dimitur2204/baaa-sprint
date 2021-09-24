@@ -49,6 +49,9 @@ body {
     color: var(--main-dark);
 }
 
+html{
+    scroll-behavior: smooth;
+}
 body > * {
     font-size: 14px;
     font-family: "Montserrat", sans-serif;
@@ -93,6 +96,12 @@ button {
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease-out;
+}
+
+.down-arrow{
+    color: var(--main-light);
+    font-size: 35px;
+    margin-top: 10px;
 }
 
 .maps-button:hover{
